@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="trainplan_default" extends="struts-default" >
+		<action name="showtrainplanimport" class="train.trainplan.action.ShowTrainPlanImport">
+			<result name="success">/page/trainplan/importtrainplan.jsp</result>
+		</action>
+		<action name="importtrainplan" class="train.trainplan.action.ImportTrainPlan">
+			<result name="success">/page/trainplan/subsuccess.jsp</result>
+		</action>
+		<action name="showchuplan" class="train.trainplan.action.ShowChuPlan">
+			<result name="success">/page/trainplan/trainplanshow.jsp</result>		
+		</action>
+		<action name="showtrainplanmodify" class="train.trainplan.action.ShowTrainPlanModify">
+			<result name="success">/page/trainplan/modifytrainplan.jsp</result>
+			
+		</action>
+		<action name="trainplanmodify" class="train.trainplan.action.TrainPlanModify">
+			<result name="success">/page/trainplan/changesuccess.jsp</result>
+			
+		</action>
+		<action name="trainplandelete" class="train.trainplan.action.TrainPlanDelete">
+			<result name="success">/page/trainplan/changesuccess.jsp</result>
+			
+		</action>
+		<action name="showtrainplanall" class="train.trainplan.action.ShowTrainPlanAll">
+			<result name="success">/page/trainplan/trainplanallshow.jsp</result>
+			
+		</action>
+		<action name="showtrainplanallyear" class="train.trainplan.action.ShowTrainPlanAllYear">
+			<result name="success">/page/trainplan/trainplanallshow.jsp</result>
+			
+		</action>
+	</package>
+</struts>    

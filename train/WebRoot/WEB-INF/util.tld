@@ -1,0 +1,92 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+
+    <description>util</description>
+    <tlib-version>1.0</tlib-version>
+    <short-name>util</short-name>
+    <uri>http://template.fb.com/article/taglib</uri>
+	<function>
+        <description>chuToString</description>
+        <name>chutostring</name>
+		<function-class>train.util.UserUtil</function-class>
+		<function-signature>java.lang.String chuToString( java.lang.Integer)</function-signature>
+    </function>
+    
+    <function>
+        <description>typeToString</description>
+        <name>typetostring</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String trainTypeToString( java.lang.Integer)</function-signature>
+    </function>
+   
+    <function>
+        <description>isbaoToString</description>
+        <name>isbaotostring</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String isbaoToString( java.lang.Integer)</function-signature>
+    </function>
+    
+     <function>
+        <description>isqianToString</description>
+        <name>isqiantostring</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String isqianToString( java.lang.Integer)</function-signature>
+    </function>
+    
+     <function>
+        <description>isexamToString</description>
+        <name>isexamtostring</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String isexamToString( java.lang.Integer)</function-signature>
+    </function>
+    
+     <function>
+        <description>timeToShow</description>
+        <name>timetoshow</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String timetoshow( java.lang.String)</function-signature>
+    </function>
+    
+     <function>
+        <description>isevaluateToString</description>
+        <name>isevaluatetostring</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String isevaluateToString( java.lang.Integer)</function-signature>
+    </function>
+    
+      <function>
+        <description>statusToString</description>
+        <name>statustostring</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String statusToString( java.lang.Integer)</function-signature>
+    </function>
+    
+    <function>
+        <description>newnumberToName</description>
+        <name>newnumbertoname</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String NewNumberToName( java.lang.String)</function-signature>
+    </function>
+    
+      <function>
+        <description>OpinionToString</description>
+        <name>opiniontostring</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String opinionToString( java.lang.Integer)</function-signature>
+    </function>
+       
+      <function>
+        <description>zhiToString</description>
+        <name>zhitostring</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String zhiToString( java.lang.Integer)</function-signature>
+    </function>
+      <function>
+        <description>authoToName</description>
+        <name>authotoname</name>
+		<function-class>train.util.Util</function-class>
+		<function-signature>java.lang.String authoToName( java.lang.String)</function-signature>
+    </function>
+</taglib>

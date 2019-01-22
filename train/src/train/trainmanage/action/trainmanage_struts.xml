@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="trainmanage_default" extends="struts-default" >
+		<action name="showtrainapplypage" class="train.trainmanage.action.ShowTrainApplyPage">
+			<result name="success">/page/trainmanage/trainapplypage.jsp</result>
+		</action>
+		<action name="subtrainapplypage" class="train.trainmanage.action.SubTrainApplyPage">
+			<result name="success">/page/trainmanage/subsuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+			<result name="nosrzm">/page/public/error.jsp</result>
+		</action>
+		<action name="viewtrainapplylzz" class="train.trainmanage.action.ViewTrainApplyLzz">
+			<result name="success">/page/trainmanage/trainapply_lzz_list.jsp</result>
+		</action>
+		<action name="updatetrainapplystatus" class="train.trainmanage.action.UpdateTrainApplyStatus">
+			<result name="success">/page/trainmanage/under_success.jsp</result>
+		</action>
+		<action name="deletetrainapplypage" class="train.trainmanage.action.DeleteTrainApplyPage">
+			<result name="success">/page/trainmanage/under_success.jsp</result>
+		</action>
+		<action name="viewtrainapplydetail" class="train.trainmanage.action.ViewTrainApplyDetail">
+			<result name="success">/page/trainmanage/trainapply_detail.jsp</result>
+		</action>
+	
+		<action name="trainapplyshenpi" class="train.trainmanage.action.TrainApplyShenpi">
+			<result name="success">/page/trainmanage/under_success.jsp</result>
+		</action>
+	
+		<action name="viewtrainapplyunder" class="train.trainmanage.action.ViewTrainApplyUnder">
+			<result name="success">/page/trainmanage/trainapply_under_list.jsp</result>
+
+		</action>
+		<action name="viewtrainapplyunderdetail" class="train.trainmanage.action.ViewTrainApplyUnderDetail">
+			<result name="success">/page/trainmanage/trainapply_under_detail.jsp</result>
+		</action>
+		<action name="viewtrainapplyall" class="train.trainmanage.action.ViewTrainApplyAll">
+			<result name="success">/page/trainmanage/trainapply_all.jsp</result>
+			<result name="successtd">/page/trainmanage/trainapply_alltd.jsp</result>
+		</action>
+		<action name="viewtrainapplyfblist" class="train.trainmanage.action.ViewTrainApplyFbList">
+			<result name="success">/page/trainmanage/trainapply_fabu_list.jsp</result>
+		</action>
+		
+		<action name="showtrainapplynotice" class="train.trainmanage.action.ShowTrainApplyNotice">
+			<result name="success">/page/trainmanage/trainapply_notice.jsp</result>
+		</action>
+		<action name="fabunotice" class="train.trainmanage.action.FabuNotice">
+			<result name="success">/page/trainmanage/under_success.jsp</result>
+		</action>
+		
+		<action name="issuescore" class="train.trainmanage.action.IssueScore">
+			<result name="success">/page/trainmanage/under_success.jsp</result>
+		</action>
+		<action name="maketrainsheet" class="train.trainmanage.action.MakeTrainSheet">
+			<result name="success">/page/public/derivedetail.jsp</result>
+			<result name="failed">/page/trainmanage/makesheetfailed.jsp</result>
+		</action>
+		<action name="returntrainsheet" class="train.trainmanage.action.ReturnTrainSheet">
+			<result name="success">/page/trainmanage/return_trainsheet.jsp</result>
+		</action>
+		<action name="viewtrainapplyscorelist" class="train.trainmanage.action.ViewTrainApplyScoreList">
+			<result name="success">/page/trainmanage/train_score_list.jsp</result>
+		</action>
+		<action name="showscoredetail" class="train.trainmanage.action.ShowScoreDetail">
+			<result name="success">/page/trainmanage/train_score_detail.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		<action name="subscoredetail" class="train.trainmanage.action.SubScoreDetail">
+			<result name="success">/page/trainmanage/under_success.jsp</result>
+		</action>
+		<action name="subreturntrainsheet" class="train.trainmanage.action.SubReturnTrainSheet">
+			<result name="success">/page/trainmanage/under_success.jsp</result>
+		</action>
+		<action name="showstatisticdetail" class="train.trainmanage.action.ShowStatisticDetail">
+			<result name="success">/page/trainmanage/trainapply_statistic_detail.jsp</result>
+		</action>
+		<action name="viewtrainapplystatisticlist" class="train.trainmanage.action.ViewTrainApplyStatisticList">
+			<result name="success">/page/trainmanage/trainapply_statistic_list.jsp</result>
+		</action>
+		<action name="viewtrainapplyprocesslist" class="train.trainmanage.action.ViewTrainApplyProcessList">
+			<result name="success">/page/trainmanage/trainapply_process_list.jsp</result>
+		</action>
+		<action name="showtrainapplyprocessdetail" class="train.trainmanage.action.ShowTrainApplyProcessDetail">
+			<result name="success">/page/trainmanage/trainapply_process_detail.jsp</result>
+		</action>
+		<action name="viewtrainapplyshenpilist" class="train.trainmanage.action.ViewTrainApplyShenpiList">
+			<result name="success">/page/trainmanage/trainapply_shenpi_list.jsp</result>
+		</action>
+		<action name="viewtrainapplyshenpilist" class="train.trainmanage.action.ViewTrainApplyShenpiList">
+			<result name="success">/page/trainmanage/trainapply_shenpi_list.jsp</result>
+		</action>
+		<action name="showstatisticscoredetail" class="train.trainmanage.action.ShowStatisticScoreDetail">
+			<result name="success">/page/trainmanage/trainapply_statistic_score_detail.jsp</result>
+		</action>
+		<action name="showstatisticremarkdetail" class="train.trainmanage.action.ShowStatisticRemarkDetail">
+			<result name="success">/page/trainmanage/trainapply_statistic_remark_detail.jsp</result>
+		</action>
+		<action name="endtrainapply" class="train.trainmanage.action.EndTrainApply">
+			<result name="success">/page/trainmanage/under_success.jsp</result>
+		</action>
+		<action name="uploadfile" class="train.trainmanage.action.UpLoadFile">
+			<result name="success">/page/trainmanage/trainapplypagetijiao.jsp</result>
+		</action>
+	
+		<action name="showtrainapplypageajax" class="train.trainmanage.action.ShowTrainApplyPageAjax">
+			<result name="success">/page/trainmanage/trainapplyajax.jsp</result>
+			<result name="failed">/page/trainmanage/faileded.jsp</result>
+			<result name="failededed">/page/trainmanage/failededed.jsp</result>
+		</action>
+	</package>
+</struts>    

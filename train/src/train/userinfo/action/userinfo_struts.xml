@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="user_default" extends="struts-default" >
+		
+		<action name="login" class="train.userinfo.action.UserLogin">
+			<result name="success">/page/train.jsp</result>
+			<result name="false">/index.jsp</result>
+		</action>
+			<action name="logout" class="train.userinfo.action.UserLogout">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="usermodify" class="train.userinfo.action.UserModify">
+			<result name="success">/page/userinfo/user_modify.jsp</result>		
+		</action>
+		
+		<action name="userdel" class="train.userinfo.action.UserDel">
+			<result name="success">/page/userinfo/updatesuccess.jsp</result>
+		</action>
+		
+		<action name="userupdate" class="train.userinfo.action.UserUpdate">
+			<result name="success">/page/userinfo/updatesuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+		
+		<action name="useradd" class="train.userinfo.action.UserAdd">
+			<result name="success">/page/userinfo/updatesuccess.jsp</result>
+			<result name="failed">/page/public/error.jsp</result>
+		</action>
+	
+		<action name="showuseradd" class="train.userinfo.action.ShowUserAdd">
+			<result name="success">/page/userinfo/user_add.jsp</result>
+		</action>
+		
+		<action name="userlistall" class="train.userinfo.action.UserList">
+			<result name="success">/page/userinfo/alluserinfo.jsp</result>
+		</action>
+		<action name="importuserinfo" class="train.userinfo.action.ImportUserInfo">
+			<result name="success">/page/userinfo/updatesuccess.jsp</result>
+		</action>
+	</package>
+</struts>    

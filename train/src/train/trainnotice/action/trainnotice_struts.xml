@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="trainnotice_default" extends="struts-default" >
+	
+		<action name="showtrainnoticelist" class="train.trainnotice.action.ShowTrainNoticeList">
+			<result name="success">/page/trainnotice/train_notice_list.jsp</result>
+		</action>
+		<action name="trainapplysign" class="train.trainnotice.action.TrainApplySign">
+			<result name="success">/page/trainnotice/under_success.jsp</result>
+		</action>
+		<action name="viewtrainnoticedetail" class="train.trainnotice.action.ViewTrainNoticeDetail">
+			<result name="success">/page/trainnotice/trainapply_notice_detail.jsp</result>
+		</action>
+		<action name="viewtrainnoticesigndetail" class="train.trainnotice.action.ViewTrainNoticeSignDetail">
+			<result name="success">/page/trainnotice/train_notice_sign_detail.jsp</result>
+		</action>
+		<action name="trainnoticeselfsign" class="train.trainnotice.action.TrainNoticeSelfSign">
+			<result name="success">/page/trainnotice/train_notice_sign_list.jsp</result>
+		</action>
+	</package>
+</struts>    
